@@ -127,15 +127,24 @@
                 </div>
             </div>
 
-            <form action="">
-                <label for="name">Name</label>
-                <input id="name" type="text">
+            <form action="https://formspree.io/f/mvovvnzr" method="POST">
+                <div class="name-container">
+                    <label for="name">Name:
+                        <input name="name" id="name" type="text" required>
+                    </label>
+                    
+                </div>
+                
+                <div class="email-container">
+                    <label for="email">Subject:
+                        <input name="email" id="email" type="text" required>
+                    </label>   
+                </div>
+                
     
-                <label for="subject">Subject</label>
-                <input type="text">
-    
-                <label for="message">Message</label>
-                <textarea id="message" rows="5" cols="33"></textarea>
+                <label for="message">Message:
+                    <textarea name="message" id="message" rows="5" cols="33" required></textarea>
+                </label>
     
                 <button>Send</button>
             </form>
@@ -155,6 +164,7 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
       AOS.init();
     </script>
